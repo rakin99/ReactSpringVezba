@@ -31,4 +31,9 @@ public class KartaService implements KartaServiceInterface{
 		return kartaRepository.findByKupac_username(username);
 	}
 
+	@Override
+	public List<Karta> findAll() {
+		return kartaRepository.findAll();
+	}
+
 }

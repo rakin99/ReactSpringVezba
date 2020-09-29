@@ -9,4 +9,5 @@ public interface KartaServiceInterface {
 	Karta save(Karta karta);
 	List<Karta> findByProjekcija_id(Integer id);
 	List<Karta> findByKupac_username(String username);
+	List<Karta> findAll();
 }

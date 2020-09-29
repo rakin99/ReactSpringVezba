@@ -89,7 +89,7 @@ public class KartaController {
 			Projekcija projekcija = projekcijaService.findById(Integer.parseInt(kartaDTO.getProjekcija()));
 
 			Karta karta = new Karta();
-			karta.setDatumVremeProdaje(DateUtil.convertFromDMYHM(DateUtil.convert(kartaDTO.getDatumVremeProdaje())));
+			karta.setDatumVremeProdaje(DateUtil.getNow());
 			karta.setKupac(user);
 			karta.setProjekcija(projekcija);
 	  
